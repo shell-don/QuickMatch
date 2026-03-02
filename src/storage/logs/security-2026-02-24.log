@@ -1,0 +1,199 @@
+[2026-02-24 21:21:45] testing.INFO: Password changed {"user_id":1,"ip_address":"127.0.0.1","event":"password_changed"} 
+[2026-02-24 21:21:45] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 21:21:45] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 21:21:45] testing.WARNING: Login failed {"email":"test@example.com","ip_address":"127.0.0.1","event":"login_failed"} 
+[2026-02-24 21:21:45] testing.INFO: User logged out {"user_id":1,"ip_address":"127.0.0.1","event":"logout"} 
+[2026-02-24 21:21:45] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 21:21:45] testing.INFO: User logged out {"user_id":1,"ip_address":"127.0.0.1","event":"logout"} 
+[2026-02-24 21:21:45] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 21:21:45] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 21:28:02] testing.INFO: Password changed {"user_id":1,"ip_address":"127.0.0.1","event":"password_changed"} 
+[2026-02-24 21:28:02] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 21:28:02] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 21:28:02] testing.WARNING: Login failed {"email":"test@example.com","ip_address":"127.0.0.1","event":"login_failed"} 
+[2026-02-24 21:28:02] testing.INFO: User logged out {"user_id":1,"ip_address":"127.0.0.1","event":"logout"} 
+[2026-02-24 21:28:02] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 21:28:02] testing.INFO: User logged out {"user_id":1,"ip_address":"127.0.0.1","event":"logout"} 
+[2026-02-24 21:28:02] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 21:28:02] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 21:28:30] testing.INFO: Password changed {"user_id":1,"ip_address":"127.0.0.1","event":"password_changed"} 
+[2026-02-24 21:28:30] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 21:28:30] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 21:28:30] testing.WARNING: Login failed {"email":"test@example.com","ip_address":"127.0.0.1","event":"login_failed"} 
+[2026-02-24 21:28:30] testing.INFO: User logged out {"user_id":1,"ip_address":"127.0.0.1","event":"logout"} 
+[2026-02-24 21:28:30] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 21:28:30] testing.INFO: User logged out {"user_id":1,"ip_address":"127.0.0.1","event":"logout"} 
+[2026-02-24 21:28:30] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 21:28:30] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 21:45:40] testing.INFO: Password changed {"user_id":1,"ip_address":"127.0.0.1","event":"password_changed"} 
+[2026-02-24 21:45:41] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 21:45:41] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 21:45:41] testing.WARNING: Login failed {"email":"test@example.com","ip_address":"127.0.0.1","event":"login_failed"} 
+[2026-02-24 21:45:41] testing.INFO: User logged out {"user_id":1,"ip_address":"127.0.0.1","event":"logout"} 
+[2026-02-24 21:45:41] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 21:45:41] testing.INFO: User logged out {"user_id":1,"ip_address":"127.0.0.1","event":"logout"} 
+[2026-02-24 21:45:41] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 21:45:41] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 21:48:36] testing.INFO: Password changed {"user_id":1,"ip_address":"127.0.0.1","event":"password_changed"} 
+[2026-02-24 21:48:36] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 21:48:36] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 21:48:36] testing.WARNING: Login failed {"email":"test@example.com","ip_address":"127.0.0.1","event":"login_failed"} 
+[2026-02-24 21:48:36] testing.INFO: User logged out {"user_id":1,"ip_address":"127.0.0.1","event":"logout"} 
+[2026-02-24 21:48:36] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 21:48:36] testing.INFO: User logged out {"user_id":1,"ip_address":"127.0.0.1","event":"logout"} 
+[2026-02-24 21:48:36] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 21:48:37] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 21:49:31] testing.INFO: Password changed {"user_id":1,"ip_address":"127.0.0.1","event":"password_changed"} 
+[2026-02-24 21:49:40] testing.INFO: Password changed {"user_id":1,"ip_address":"127.0.0.1","event":"password_changed"} 
+[2026-02-24 21:49:40] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 21:49:40] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 21:49:40] testing.WARNING: Login failed {"email":"test@example.com","ip_address":"127.0.0.1","event":"login_failed"} 
+[2026-02-24 21:49:40] testing.INFO: User logged out {"user_id":1,"ip_address":"127.0.0.1","event":"logout"} 
+[2026-02-24 21:49:40] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 21:49:40] testing.INFO: User logged out {"user_id":1,"ip_address":"127.0.0.1","event":"logout"} 
+[2026-02-24 21:49:40] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 21:49:40] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 21:53:07] testing.INFO: Password changed {"user_id":1,"ip_address":"127.0.0.1","event":"password_changed"} 
+[2026-02-24 21:53:07] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 21:53:07] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 21:53:07] testing.WARNING: Login failed {"email":"test@example.com","ip_address":"127.0.0.1","event":"login_failed"} 
+[2026-02-24 21:53:07] testing.INFO: User logged out {"user_id":1,"ip_address":"127.0.0.1","event":"logout"} 
+[2026-02-24 21:53:07] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 21:53:08] testing.INFO: User logged out {"user_id":1,"ip_address":"127.0.0.1","event":"logout"} 
+[2026-02-24 21:53:08] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 21:53:08] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 21:55:39] testing.INFO: Password changed {"user_id":1,"ip_address":"127.0.0.1","event":"password_changed"} 
+[2026-02-24 21:55:39] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 21:55:39] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 21:55:39] testing.WARNING: Login failed {"email":"test@example.com","ip_address":"127.0.0.1","event":"login_failed"} 
+[2026-02-24 21:55:39] testing.INFO: User logged out {"user_id":1,"ip_address":"127.0.0.1","event":"logout"} 
+[2026-02-24 21:55:39] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 21:55:39] testing.INFO: User logged out {"user_id":1,"ip_address":"127.0.0.1","event":"logout"} 
+[2026-02-24 21:55:39] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 21:55:39] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 21:58:06] testing.INFO: Password changed {"user_id":1,"ip_address":"127.0.0.1","event":"password_changed"} 
+[2026-02-24 21:58:06] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 21:58:06] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 21:58:06] testing.WARNING: Login failed {"email":"test@example.com","ip_address":"127.0.0.1","event":"login_failed"} 
+[2026-02-24 21:58:06] testing.INFO: User logged out {"user_id":1,"ip_address":"127.0.0.1","event":"logout"} 
+[2026-02-24 21:58:06] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 21:58:06] testing.INFO: User logged out {"user_id":1,"ip_address":"127.0.0.1","event":"logout"} 
+[2026-02-24 21:58:06] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 21:58:06] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 22:02:10] testing.INFO: Password changed {"user_id":1,"ip_address":"127.0.0.1","event":"password_changed"} 
+[2026-02-24 22:02:10] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 22:02:10] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 22:02:11] testing.WARNING: Login failed {"email":"test@example.com","ip_address":"127.0.0.1","event":"login_failed"} 
+[2026-02-24 22:02:11] testing.INFO: User logged out {"user_id":1,"ip_address":"127.0.0.1","event":"logout"} 
+[2026-02-24 22:02:11] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 22:02:11] testing.INFO: User logged out {"user_id":1,"ip_address":"127.0.0.1","event":"logout"} 
+[2026-02-24 22:02:11] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 22:02:11] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 22:02:46] testing.INFO: Password changed {"user_id":1,"ip_address":"127.0.0.1","event":"password_changed"} 
+[2026-02-24 22:02:46] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 22:02:46] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 22:02:46] testing.WARNING: Login failed {"email":"test@example.com","ip_address":"127.0.0.1","event":"login_failed"} 
+[2026-02-24 22:02:46] testing.INFO: User logged out {"user_id":1,"ip_address":"127.0.0.1","event":"logout"} 
+[2026-02-24 22:02:46] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 22:02:46] testing.INFO: User logged out {"user_id":1,"ip_address":"127.0.0.1","event":"logout"} 
+[2026-02-24 22:02:46] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 22:02:46] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 22:03:01] testing.INFO: Password changed {"user_id":1,"ip_address":"127.0.0.1","event":"password_changed"} 
+[2026-02-24 22:03:01] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 22:03:01] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 22:03:01] testing.WARNING: Login failed {"email":"test@example.com","ip_address":"127.0.0.1","event":"login_failed"} 
+[2026-02-24 22:03:01] testing.INFO: User logged out {"user_id":1,"ip_address":"127.0.0.1","event":"logout"} 
+[2026-02-24 22:03:01] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 22:03:01] testing.INFO: User logged out {"user_id":1,"ip_address":"127.0.0.1","event":"logout"} 
+[2026-02-24 22:03:01] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 22:03:01] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 22:08:03] testing.INFO: Password changed {"user_id":1,"ip_address":"127.0.0.1","event":"password_changed"} 
+[2026-02-24 22:08:03] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 22:08:03] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 22:08:03] testing.WARNING: Login failed {"email":"test@example.com","ip_address":"127.0.0.1","event":"login_failed"} 
+[2026-02-24 22:08:03] testing.INFO: User logged out {"user_id":1,"ip_address":"127.0.0.1","event":"logout"} 
+[2026-02-24 22:08:03] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 22:08:03] testing.INFO: User logged out {"user_id":1,"ip_address":"127.0.0.1","event":"logout"} 
+[2026-02-24 22:08:04] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 22:08:04] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 22:22:27] testing.INFO: Password changed {"user_id":1,"ip_address":"127.0.0.1","event":"password_changed"} 
+[2026-02-24 22:22:28] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 22:22:28] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 22:22:28] testing.WARNING: Login failed {"email":"test@example.com","ip_address":"127.0.0.1","event":"login_failed"} 
+[2026-02-24 22:22:28] testing.INFO: User logged out {"user_id":1,"ip_address":"127.0.0.1","event":"logout"} 
+[2026-02-24 22:22:28] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 22:22:28] testing.INFO: User logged out {"user_id":1,"ip_address":"127.0.0.1","event":"logout"} 
+[2026-02-24 22:22:28] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 22:22:28] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 22:23:17] testing.INFO: Password changed {"user_id":1,"ip_address":"127.0.0.1","event":"password_changed"} 
+[2026-02-24 22:23:18] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 22:23:18] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 22:23:18] testing.WARNING: Login failed {"email":"test@example.com","ip_address":"127.0.0.1","event":"login_failed"} 
+[2026-02-24 22:23:18] testing.INFO: User logged out {"user_id":1,"ip_address":"127.0.0.1","event":"logout"} 
+[2026-02-24 22:23:18] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 22:23:18] testing.INFO: User logged out {"user_id":1,"ip_address":"127.0.0.1","event":"logout"} 
+[2026-02-24 22:23:18] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 22:23:18] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 22:26:27] testing.INFO: Password changed {"user_id":1,"ip_address":"127.0.0.1","event":"password_changed"} 
+[2026-02-24 22:26:27] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 22:26:27] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 22:26:27] testing.WARNING: Login failed {"email":"test@example.com","ip_address":"127.0.0.1","event":"login_failed"} 
+[2026-02-24 22:26:27] testing.INFO: User logged out {"user_id":1,"ip_address":"127.0.0.1","event":"logout"} 
+[2026-02-24 22:26:27] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 22:26:27] testing.INFO: User logged out {"user_id":1,"ip_address":"127.0.0.1","event":"logout"} 
+[2026-02-24 22:26:27] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 22:26:27] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 22:33:58] testing.INFO: Password changed {"user_id":1,"ip_address":"127.0.0.1","event":"password_changed"} 
+[2026-02-24 22:33:58] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 22:33:58] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 22:33:58] testing.WARNING: Login failed {"email":"test@example.com","ip_address":"127.0.0.1","event":"login_failed"} 
+[2026-02-24 22:33:58] testing.INFO: User logged out {"user_id":1,"ip_address":"127.0.0.1","event":"logout"} 
+[2026-02-24 22:33:58] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 22:33:59] testing.INFO: User logged out {"user_id":1,"ip_address":"127.0.0.1","event":"logout"} 
+[2026-02-24 22:33:59] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 22:33:59] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 22:41:40] testing.INFO: Password changed {"user_id":1,"ip_address":"127.0.0.1","event":"password_changed"} 
+[2026-02-24 22:41:41] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 22:41:41] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 22:41:41] testing.WARNING: Login failed {"email":"test@example.com","ip_address":"127.0.0.1","event":"login_failed"} 
+[2026-02-24 22:41:41] testing.INFO: User logged out {"user_id":1,"ip_address":"127.0.0.1","event":"logout"} 
+[2026-02-24 22:41:41] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 22:41:41] testing.INFO: User logged out {"user_id":1,"ip_address":"127.0.0.1","event":"logout"} 
+[2026-02-24 22:41:41] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 22:41:41] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 22:58:18] testing.INFO: Password changed {"user_id":1,"ip_address":"127.0.0.1","event":"password_changed"} 
+[2026-02-24 22:58:19] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 22:58:19] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 22:58:19] testing.WARNING: Login failed {"email":"test@example.com","ip_address":"127.0.0.1","event":"login_failed"} 
+[2026-02-24 22:58:19] testing.INFO: User logged out {"user_id":1,"ip_address":"127.0.0.1","event":"logout"} 
+[2026-02-24 22:58:19] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 22:58:19] testing.INFO: User logged out {"user_id":1,"ip_address":"127.0.0.1","event":"logout"} 
+[2026-02-24 22:58:19] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 22:58:19] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 22:58:56] testing.INFO: Password changed {"user_id":1,"ip_address":"127.0.0.1","event":"password_changed"} 
+[2026-02-24 22:58:56] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 22:58:56] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 22:58:56] testing.WARNING: Login failed {"email":"test@example.com","ip_address":"127.0.0.1","event":"login_failed"} 
+[2026-02-24 22:58:56] testing.INFO: User logged out {"user_id":1,"ip_address":"127.0.0.1","event":"logout"} 
+[2026-02-24 22:58:56] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 22:58:56] testing.INFO: User logged out {"user_id":1,"ip_address":"127.0.0.1","event":"logout"} 
+[2026-02-24 22:58:56] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 22:58:56] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 22:59:54] testing.INFO: Password changed {"user_id":1,"ip_address":"127.0.0.1","event":"password_changed"} 
+[2026-02-24 22:59:54] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 22:59:54] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 22:59:54] testing.WARNING: Login failed {"email":"test@example.com","ip_address":"127.0.0.1","event":"login_failed"} 
+[2026-02-24 22:59:55] testing.INFO: User logged out {"user_id":1,"ip_address":"127.0.0.1","event":"logout"} 
+[2026-02-24 22:59:55] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 22:59:55] testing.INFO: User logged out {"user_id":1,"ip_address":"127.0.0.1","event":"logout"} 
+[2026-02-24 22:59:55] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 22:59:55] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 23:28:27] testing.INFO: Password changed {"user_id":1,"ip_address":"127.0.0.1","event":"password_changed"} 
+[2026-02-24 23:28:28] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 23:28:28] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 23:28:28] testing.WARNING: Login failed {"email":"test@example.com","ip_address":"127.0.0.1","event":"login_failed"} 
+[2026-02-24 23:28:28] testing.INFO: User logged out {"user_id":1,"ip_address":"127.0.0.1","event":"logout"} 
+[2026-02-24 23:28:28] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 23:28:28] testing.INFO: User logged out {"user_id":1,"ip_address":"127.0.0.1","event":"logout"} 
+[2026-02-24 23:28:28] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
+[2026-02-24 23:28:28] testing.INFO: User logged in {"user_id":1,"ip_address":"127.0.0.1","event":"login_success"} 
