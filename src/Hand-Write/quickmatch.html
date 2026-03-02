@@ -460,3 +460,311 @@
 
 </body>
 </html>
+
+<!-- Base de donnée -->
+-- ===============================
+-- TABLES principales
+-- ===============================
+
+-- 1. users
+CREATE TABLE users (
+   id INT AUTO_INCREMENT PRIMARY KEY,
+   name VARCHAR(255) NOT NULL,
+   email VARCHAR(255) UNIQUE NOT NULL,
+   password VARCHAR(255) NOT NULL,
+   role_id INT,
+   company_id INT,
+   region_id INT,
+   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+   updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+   FOREIGN KEY (role_id) REFERENCES roles(id),
+   FOREIGN KEY (company_id) REFERENCES companies(id),
+   FOREIGN KEY (region_id) REFERENCES regions(id)
+);
+
+-- 2. roles
+CREATE TABLE roles (
+   id INT AUTO_INCREMENT PRIMARY KEY,
+   name VARCHAR(100) NOT NULL
+);
+
+-- 3. permissions
+CREATE TABLE permissions (
+   id INT AUTO_INCREMENT PRIMARY KEY,
+   name VARCHAR(100) NOT NULL
+);
+
+-- 4. companies
+CREATE TABLE companies (
+   id INT AUTO_INCREMENT PRIMARY KEY,
+   name VARCHAR(255) NOT NULL,
+   region_id INT,
+   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+   FOREIGN KEY (region_id) REFERENCES regions(id)
+);
+
+-- 5. job_offers
+CREATE TABLE job_offers (
+   id INT AUTO_INCREMENT PRIMARY KEY,
+   title VARCHAR(255) NOT NULL,
+   description TEXT,
+   company_id INT,
+   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+   FOREIGN KEY (company_id) REFERENCES companies(id)
+);
+
+-- 6. skills
+CREATE TABLE skills (
+   id INT AUTO_INCREMENT PRIMARY KEY,
+   name VARCHAR(100) NOT NULL
+);
+
+-- 7. professions
+CREATE TABLE professions (
+   id INT AUTO_INCREMENT PRIMARY KEY,
+   name VARCHAR(100) NOT NULL
+);
+
+-- ===============================
+-- TABLES associations
+-- ===============================
+
+-- 8. regions
+CREATE TABLE regions (
+   id INT AUTO_INCREMENT PRIMARY KEY,
+   name VARCHAR(100) NOT NULL
+);
+
+-- 9. user_skills
+CREATE TABLE user_skills (
+   id INT AUTO_INCREMENT PRIMARY KEY,
+   user_id INT,
+   skill_id INT,
+   level VARCHAR(50),
+   FOREIGN KEY (user_id) REFERENCES users(id),
+   FOREIGN KEY (skill_id) REFERENCES skills(id)
+);
+
+-- 10. user_applications
+CREATE TABLE user_applications (
+   id INT AUTO_INCREMENT PRIMARY KEY,
+   user_id INT,
+   offer_id INT,
+   status VARCHAR(50),
+   applied_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+   FOREIGN KEY (user_id) REFERENCES users(id),
+   FOREIGN KEY (offer_id) REFERENCES job_offers(id)
+);
+
+-- 11. user_favorites
+CREATE TABLE user_favorites (
+   id INT AUTO_INCREMENT PRIMARY KEY,
+   user_id INT,
+   offer_id INT,
+   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+   FOREIGN KEY (user_id) REFERENCES users(id),
+   FOREIGN KEY (offer_id) REFERENCES job_offers(id)
+);
+
+-- 12. thread_participants
+CREATE TABLE thread_participants (
+   id INT AUTO_INCREMENT PRIMARY KEY,
+   thread_id INT,
+   user_id INT,
+   FOREIGN KEY (thread_id) REFERENCES threads(id),
+   FOREIGN KEY (user_id) REFERENCES users(id)
+);
+
+-- 13. threads
+CREATE TABLE threads (
+   id INT AUTO_INCREMENT PRIMARY KEY,
+   subject VARCHAR(255) NOT NULL,
+   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- 14. messages
+CREATE TABLE messages (
+   id INT AUTO_INCREMENT PRIMARY KEY,
+   thread_id INT,
+   sender_id INT,
+   content TEXT,
+   sent_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+   FOREIGN KEY (thread_id) REFERENCES threads(id),
+   FOREIGN KEY (sender_id) REFERENCES users(id)
+);
+
+-- 15. role_has_permissions
+CREATE TABLE role_has_permissions (
+   id INT AUTO_INCREMENT PRIMARY KEY,
+   role_id INT,
+   permission_id INT,
+   FOREIGN KEY (role_id) REFERENCES roles(id),
+   FOREIGN KEY (permission_id) REFERENCES permissions(id)
+);
+
+-- 16. profession_skills
+CREATE TABLE profession_skills (
+   id INT AUTO_INCREMENT PRIMARY KEY,
+   profession_id INT,
+   skill_id INT,
+   FOREIGN KEY (profession_id) REFERENCES professions(id),
+   FOREIGN KEY (skill_id) REFERENCES skills(id)
+);
+
+-- 17. sessions
+CREATE TABLE sessions (
+   id INT AUTO_INCREMENT PRIMARY KEY,
+   user_id INT,
+   token VARCHAR(255),
+   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+   FOREIGN KEY (user_id) REFERENCES users(id)
+);
+
+-- 18. activity_logs
+CREATE TABLE activity_logs (
+   id INT AUTO_INCREMENT PRIMARY KEY,
+   user_id INT,
+   action VARCHAR(255),
+   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+   FOREIGN KEY (user_id) REFERENCES users(id)
+);
+
+-- 19. password_resets
+CREATE TABLE password_resets (
+   id INT AUTO_INCREMENT PRIMARY KEY,
+   user_id INT,
+   token VARCHAR(255),
+   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+   FOREIGN KEY (user_id) REFERENCES users(id)
+);
+
+-- 20. tokens
+CREATE TABLE tokens (
+   id INT AUTO_INCREMENT PRIMARY KEY,
+   user_id INT,
+   token VARCHAR(255),
+   expires_at TIMESTAMP,
+   FOREIGN KEY (user_id) REFERENCES users(id)
+);
+
+-- 21. attachments
+CREATE TABLE attachments (
+   id INT AUTO_INCREMENT PRIMARY KEY,
+   application_id INT,
+   file_path VARCHAR(255),
+   uploaded_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+   FOREIGN KEY (application_id) REFERENCES user_applications(id)
+);
+
+-- 22. reviews
+CREATE TABLE reviews (
+   id INT AUTO_INCREMENT PRIMARY KEY,
+   user_id INT,
+   company_id INT,
+   rating INT,
+   comment TEXT,
+   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+   FOREIGN KEY (user_id) REFERENCES users(id),
+   FOREIGN KEY (company_id) REFERENCES companies(id)
+);
+
+-- 23. reports
+CREATE TABLE reports (
+   id INT AUTO_INCREMENT PRIMARY KEY,
+   user_id INT,
+   offer_id INT,
+   reason TEXT,
+   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+   FOREIGN KEY (user_id) REFERENCES users(id),
+   FOREIGN KEY (offer_id) REFERENCES job_offers(id)
+);
+
+-- 24. user_notifications
+CREATE TABLE user_notifications (
+   id INT AUTO_INCREMENT PRIMARY KEY,
+   user_id INT,
+   message TEXT,
+   read BOOLEAN DEFAULT FALSE,
+   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+   FOREIGN KEY (user_id) REFERENCES users(id)
+);
+
+-- 25. job_offer_skills
+CREATE TABLE job_offer_skills (
+   id INT AUTO_INCREMENT PRIMARY KEY,
+   offer_id INT,
+   skill_id INT,
+   FOREIGN KEY (offer_id) REFERENCES job_offers(id),
+   FOREIGN KEY (skill_id) REFERENCES skills(id)
+);
+
+-- 26. company_reviews
+CREATE TABLE company_reviews (
+   id INT AUTO_INCREMENT PRIMARY KEY,
+   company_id INT,
+   user_id INT,
+   comment TEXT,
+   rating INT,
+   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+   FOREIGN KEY (company_id) REFERENCES companies(id),
+   FOREIGN KEY (user_id) REFERENCES users(id)
+);
+
+-- 27. messages_attachments
+CREATE TABLE message_attachments (
+   id INT AUTO_INCREMENT PRIMARY KEY,
+   message_id INT,
+   file_path VARCHAR(255),
+   FOREIGN KEY (message_id) REFERENCES messages(id)
+);
+
+-- 28. job_offer_tags
+CREATE TABLE job_offer_tags (
+   id INT AUTO_INCREMENT PRIMARY KEY,
+   offer_id INT,
+   tag VARCHAR(100),
+   FOREIGN KEY (offer_id) REFERENCES job_offers(id)
+);
+
+-- 29. company_tags
+CREATE TABLE company_tags (
+   id INT AUTO_INCREMENT PRIMARY KEY,
+   company_id INT,
+   tag VARCHAR(100),
+   FOREIGN KEY (company_id) REFERENCES companies(id)
+);
+
+-- 30. user_settings
+CREATE TABLE user_settings (
+   id INT AUTO_INCREMENT PRIMARY KEY,
+   user_id INT,
+   setting_key VARCHAR(100),
+   setting_value VARCHAR(255),
+   FOREIGN KEY (user_id) REFERENCES users(id)
+);
+
+-- 31. user_preferences
+CREATE TABLE user_preferences (
+   id INT AUTO_INCREMENT PRIMARY KEY,
+   user_id INT,
+   preference_key VARCHAR(100),
+   preference_value VARCHAR(255),
+   FOREIGN KEY (user_id) REFERENCES users(id)
+);
+
+-- 32. saved_searches
+CREATE TABLE saved_searches (
+   id INT AUTO_INCREMENT PRIMARY KEY,
+   user_id INT,
+   query TEXT,
+   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+   FOREIGN KEY (user_id) REFERENCES users(id)
+);
+
+-- 33. notifications_log
+CREATE TABLE notifications_log (
+   id INT AUTO_INCREMENT PRIMARY KEY,
+   notification_id INT,
+   status VARCHAR(50),
+   updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
